@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "Hiragino Mincho Pro", sans-serif;
+  font-family: "PT Serif", "Cinzel", serif, "Dancing Script";
   font-size: 1.6rem;
 }
 
@@ -16,5 +16,100 @@ img {
   height: auto;
   vertical-align: bottom;
   line-height: 0;
+}
+
+.cmn-section {
+  padding-top: 60px;
+}
+
+.cmn-title {
+  font-size: 6vw;
+  text-align: center;
+}
+
+.cmn-title::before {
+  content: "";
+  display: inline-block;
+  width: 2vw;
+  height: 0.5vw;
+  vertical-align: middle;
+  background-color: #000;
+  margin-right: 10px;
+}
+
+.cmn-title::after {
+  content: "";
+  display: inline-block;
+  width: 2vw;
+  height: 0.5vw;
+  vertical-align: middle;
+  background-color: #000;
+  margin-left: 10px;
+}
+
+.nav-list {
+  position: fixed;
+  top: 40px;
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 42px;
+  -webkit-box-shadow: 1px 2px 15px 1px #ebecef;
+          box-shadow: 1px 2px 15px 1px #ebecef;
+  background-color: #fff;
+}
+
+.nav-list .item .link {
+  display: block;
+  padding: 25px 16px;
+  color: #000;
+  font-size: 2vw;
+}
+
+.top {
+  background-image: url(https://placehold.jp/1280x850.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.top-title {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  text-align: center;
+  font-size: 6vw;
+}
+
+.service-list-wrapper {
+  background-image: url(https://placehold.jp/1280x850.png);
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 2000px 500px;
+  border-top-right-radius: 2000px 500px;
+}
+
+.service-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.service-list .item {
+  width: 30%;
+  text-align: center;
+}
+
+.service-list .img-wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.service-list .img {
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */

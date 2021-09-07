@@ -1,0 +1,34 @@
+.service {
+}
+.inner {
+}
+.service-title {
+}
+.service-list-wrapper {
+  background-image: url(https://placehold.jp/1280x850.png);
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 2000px 500px;
+  border-top-right-radius: 2000px 500px;
+}
+.service-list {
+  display: flex;
+  justify-content: center;
+  .item {
+    width: 30%;
+    text-align: center;
+  }
+  .img-wrapper {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .img {
+    border-radius: 50%;
+  }
+  .text {
+  }
+  .title {
+  }
+  .desc {
+  }
+}
