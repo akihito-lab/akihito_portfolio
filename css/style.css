@@ -47,6 +47,64 @@ img {
   margin-left: 10px;
 }
 
+.nav_toggle {
+  display: block;
+  position: fixed;
+  width: 65px;
+  height: 65px;
+  border-radius: 42px;
+  -webkit-box-shadow: 1px 2px 15px 1px #ebecef;
+          box-shadow: 1px 2px 15px 1px #ebecef;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 101;
+  top: 40px;
+  right: 30px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.nav_toggle i {
+  display: block;
+  height: 2px;
+  width: 22px;
+  background-color: #333;
+  position: absolute;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.nav_toggle i:nth-child(1) {
+  margin-bottom: 4px;
+}
+
+.nav_toggle i:nth-child(2) {
+  margin-top: 4px;
+}
+
+.nav_toggle.show i:nth-child(1) {
+  margin-bottom: 0;
+}
+
+.nav_toggle.show i:nth-child(2) {
+  opacity: 0;
+  margin-top: 0;
+}
+
 .nav-list {
   position: fixed;
   top: 40px;
@@ -70,11 +128,37 @@ img {
   font-size: 2vw;
 }
 
+.click-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0.5s;
+  transition: opacity 0.5s, visibility 0.5s;
+  z-index: 99;
+}
+
+.click-list .item .link {
+  color: #000;
+  font-size: 2vw;
+}
+
+.click-nav.show {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.5s, visibility 0.5s;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
 .top {
   background-image: url(https://placehold.jp/1280x850.png);
   background-position: center;
   background-size: cover;
-  height: 70vh;
+  height: 100vh;
   position: relative;
 }
 
@@ -178,11 +262,11 @@ img {
 }
 
 .works {
-  margin-top: 30vw;
+  margin-top: 32vw;
 }
 
 .works-list {
-  margin: 30px auto 0;
+  margin: 50px auto 0;
   width: 80%;
 }
 
@@ -238,7 +322,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   width: 80%;
-  margin: 30px auto 0;
+  margin: 50px auto 0;
 }
 
 .about-img-wrapper {
