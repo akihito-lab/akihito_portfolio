@@ -19,7 +19,7 @@ img {
 }
 
 .cmn-section {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 .cmn-title {
@@ -60,6 +60,7 @@ img {
   -webkit-box-shadow: 1px 2px 15px 1px #ebecef;
           box-shadow: 1px 2px 15px 1px #ebecef;
   background-color: #fff;
+  z-index: 100;
 }
 
 .nav-list .item .link {
@@ -73,21 +74,55 @@ img {
   background-image: url(https://placehold.jp/1280x850.png);
   background-position: center;
   background-size: cover;
+  height: 70vh;
+  position: relative;
 }
 
 .top-title {
-  padding-top: 300px;
-  padding-bottom: 300px;
-  text-align: center;
   font-size: 6vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.service {
+  position: relative;
 }
 
 .service-list-wrapper {
-  background-image: url(https://placehold.jp/1280x850.png);
+  background-image: url("https://placehold.jp/1280x850.png");
   background-size: cover;
   background-position: center;
-  border-top-left-radius: 2000px 500px;
-  border-top-right-radius: 2000px 500px;
+  border-top-left-radius: 7000px 1000px;
+  border-top-right-radius: 7000px 1000px;
+  position: relative;
+  height: 50vw;
+}
+
+.service-list-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 10vw;
+  border-top-left-radius: 7000px 1000px;
+  border-top-right-radius: 7000px 1000px;
+  background-color: #fff;
+}
+
+.service-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .service-list {
@@ -97,11 +132,23 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  top: 35vw;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 20;
+  width: 80%;
 }
 
 .service-list .item {
   width: 30%;
   text-align: center;
+  margin-right: 10px;
+}
+
+.service-list .item:last-of-type {
+  margin-right: 0;
 }
 
 .service-list .img-wrapper {
@@ -111,5 +158,130 @@ img {
 
 .service-list .img {
   border-radius: 50%;
+}
+
+.service-list .smartphone-img {
+  background-color: #ff9514;
+}
+
+.service-list .text {
+  margin-top: 10px;
+}
+
+.service-list .title {
+  font-size: 3vw;
+}
+
+.service-list .desc {
+  font-size: 2vw;
+  margin-top: 30px;
+}
+
+.works {
+  margin-top: 30vw;
+}
+
+.works-list {
+  margin: 30px auto 0;
+  width: 80%;
+}
+
+.works-list .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.works-list .item:first-of-type {
+  margin-top: 0;
+}
+
+.works-list .item:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.works-list .item:nth-child(even) .text {
+  margin-right: 10px;
+}
+
+.works-list .item:nth-child(odd) .text {
+  margin-left: 10px;
+}
+
+.works-list .img-wrapper {
+  width: 50%;
+}
+
+.works-list .text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.works-list .title {
+  font-size: 3vw;
+}
+
+.works-list .desc {
+  font-size: 2vw;
+  margin-top: 30px;
+}
+
+.about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 30px auto 0;
+}
+
+.about-img-wrapper {
+  width: 30%;
+}
+
+.about-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.about-text .introduction-text {
+  padding-top: 10px;
+}
+
+.about-text .introduction-text .introduction-title {
+  font-size: 3vw;
+}
+
+.about-text .introduction-text .introduction-desc {
+  margin-top: 30px;
+  font-size: 2vw;
+}
+
+.about-text .education-text {
+  padding-top: 10px;
+}
+
+.about-text .education-text .education-title {
+  font-size: 3vw;
+}
+
+.about-text .education-text .education-desc {
+  margin-top: 30px;
+  font-size: 2vw;
+}
+
+.about-catchcopy {
+  font-size: 4vw;
+  text-align: center;
+  margin-top: 50px;
 }
 /*# sourceMappingURL=style.css.map */

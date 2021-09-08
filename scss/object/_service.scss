@@ -1,22 +1,54 @@
 .service {
+  position: relative;
 }
 .inner {
 }
-.service-title {
-}
+
 .service-list-wrapper {
-  background-image: url(https://placehold.jp/1280x850.png);
+  background-image: url("https://placehold.jp/1280x850.png");
   background-size: cover;
   background-position: center;
-  border-top-left-radius: 2000px 500px;
-  border-top-right-radius: 2000px 500px;
+  border-top-left-radius: 7000px 1000px;
+  border-top-right-radius: 7000px 1000px;
+  position: relative;
+  height: 50vw;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 10vw;
+    border-top-left-radius: 7000px 1000px;
+    border-top-right-radius: 7000px 1000px;
+    background-color: cl(white);
+  }
+}
+.service-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .service-list {
   display: flex;
   justify-content: center;
+  position: absolute;
+  top: 35vw;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 20;
+  width: 80%;
   .item {
     width: 30%;
     text-align: center;
+    margin-right: 10px;
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
   .img-wrapper {
     width: 50%;
@@ -25,10 +57,17 @@
   .img {
     border-radius: 50%;
   }
+  .smartphone-img {
+    background-color: cl(orange);
+  }
   .text {
+    margin-top: 10px;
   }
   .title {
+    font-size: 3vw;
   }
   .desc {
+    font-size: 2vw;
+    margin-top: 30px;
   }
 }

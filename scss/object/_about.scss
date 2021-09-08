@@ -1,0 +1,47 @@
+.about {
+}
+.inner {
+}
+.about-title {
+}
+.about-wrapper {
+  display: flex;
+  width: 80%;
+  margin: 30px auto 0;
+}
+.about-img-wrapper {
+  width: 30%;
+}
+.about-img {
+}
+.about-text {
+  flex: 1;
+  margin-left: 10px;
+  text-align: center;
+  .introduction-text {
+    padding-top: 10px;
+    .introduction-title {
+      font-size: 3vw;
+    }
+    .introduction-desc {
+      margin-top: 30px;
+      font-size: 2vw;
+    }
+  }
+  .education-text {
+    padding-top: 10px;
+    .education-title {
+      font-size: 3vw;
+    }
+    .education-desc {
+      margin-top: 30px;
+
+      font-size: 2vw;
+    }
+  }
+}
+.about-catchcopy {
+  font-size: 4vw;
+  text-align: center;
+  margin-top: 50px;
+}

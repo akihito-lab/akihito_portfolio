@@ -1,0 +1,44 @@
+.works {
+  margin-top: 30vw;
+}
+.works-title {
+}
+.works-list {
+  margin: 30px auto 0;
+  width: 80%;
+  .item {
+    display: flex;
+    margin-top: 20px;
+    &:first-of-type {
+      margin-top: 0;
+    }
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      .text {
+        margin-right: 10px;
+      }
+    }
+    &:nth-child(odd) {
+      .text {
+        margin-left: 10px;
+      }
+    }
+  }
+  .img-wrapper {
+    width: 50%;
+  }
+  .img {
+  }
+  .text {
+    flex: 1;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .title {
+    font-size: 3vw;
+  }
+  .desc {
+    font-size: 2vw;
+    margin-top: 30px;
+  }
+}
