@@ -4,7 +4,7 @@
   width: 65px;
   height: 65px;
   border-radius: 42px;
-  box-shadow: 1px 2px 15px 1px cl(gray);
+  box-shadow: 1px 2px 15px 5px cl(gray);
   background-color: cl(white);
   display: flex;
   justify-content: center;
@@ -12,9 +12,10 @@
   z-index: 101;
   top: 40px;
   right: 30px;
-  opacity: 0;
-  visibility: hidden;
-  transition: transform 0.5s, opacity 0.5s;
+  display: none;
+  @include sp {
+    display: block;
+  }
 }
 .nav_toggle i {
   display: block;
@@ -22,24 +23,27 @@
   width: 22px;
   background-color: #333;
   position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
   transition: transform 0.5s, opacity 0.5s;
 }
 .nav_toggle i:nth-child(1) {
-  margin-bottom: 4px;
+  top: 34px;
 }
 .nav_toggle i:nth-child(2) {
-  margin-top: 4px;
+  bottom: 34px;
 }
 
 // クリック時のバーガーボタン
 .nav_toggle.show i:nth-child(1) {
-  margin-bottom: 0;
+  top: 32px;
 }
 .nav_toggle.show i:nth-child(2) {
   opacity: 0;
-  margin-top: 0;
 }
 
+// ナビゲーション
 .header-nav {
 }
 .nav-list {
@@ -47,22 +51,41 @@
   top: 40px;
   right: 30px;
   display: flex;
+  height: 65px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 42px;
-  box-shadow: 1px 2px 15px 1px cl(gray);
+  box-shadow: 1px 2px 15px 5px cl(gray);
   background-color: cl(white);
   z-index: 100;
+  transition: transform 1s, opacity 0.7s ease-out;
+  transform: scale(1, 1);
+  transform-origin: right top;
+  opacity: 1;
+  @include sp {
+    transform-origin: right top;
+    transform: scale(0, 1);
+    opacity: 0;
+  }
+  &.open {
+    transform-origin: right top;
+    transform: scale(0, 1);
+    opacity: 0;
+  }
   .item {
     .link {
       display: block;
-      padding: 25px 16px;
+      padding: 0px 16px;
       color: cl(black);
       font-size: 2vw;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
-
+// クリック時のナビゲーション
 .click-nav {
   position: fixed;
   top: 0;
