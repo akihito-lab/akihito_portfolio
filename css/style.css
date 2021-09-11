@@ -339,6 +339,20 @@ img {
 
 .works-list .img-wrapper {
   width: 50%;
+  -webkit-perspective: 2000px;
+          perspective: 2000px;
+  background-color: #000;
+}
+
+.works-list .img {
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .works-list .img:hover {
@@ -346,7 +360,8 @@ img {
           transform-origin: right center;
   -webkit-transform: rotateY(-18deg);
           transform: rotateY(-18deg);
-  opacity: 0.9;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .works-list .text {

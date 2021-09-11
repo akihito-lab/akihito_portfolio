@@ -26,12 +26,18 @@
   }
   .img-wrapper {
     width: 50%;
+    perspective: 2000px;
+    background-color: cl(black);
   }
   .img {
+    transform-origin: right center;
+    transform: rotateY(0deg);
+    transition: transform 0.3s ease;
     &:hover {
       transform-origin: right center;
       transform: rotateY(-18deg);
-      opacity: 0.9;
+      opacity: 0.8;
+      cursor: pointer;
     }
   }
   .text {
