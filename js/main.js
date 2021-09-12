@@ -2,11 +2,13 @@ $(function() {
 
     $('.nav_toggle').on('click', function () {
         $('.nav_toggle, .click-nav').toggleClass('show');
+        $('body').toggleClass('fixed');
+
       });
 
 
       if (window.matchMedia('(min-width: 769px)').matches) {
-        /* ウィンドウサイズ668以下の処理を記述 */
+        /* ウィンドウサイズ768以下の処理を記述 */
         $(window).scroll(function () {
           var TopHeight = $('.top').outerHeight(true);
           if ($(this).scrollTop() > TopHeight) {
