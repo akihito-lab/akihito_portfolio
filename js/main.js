@@ -11,7 +11,7 @@ $(function() {
         /* ウィンドウサイズ768以下の処理を記述 */
         $(window).scroll(function () {
           var TopHeight = $('.top').outerHeight(true);
-          if ($(this).scrollTop() > TopHeight) {
+          if ($(this).scrollTop() > TopHeight - 95) {
             $('.nav-list').addClass('Telescopic');
             $('.nav_toggle').fadeIn(800);
           } else {
@@ -33,6 +33,47 @@ $(function() {
       });
     });
 
+    // nav-list特定の位置までスクロール
+    $('.nav-service').click(function() {
+      $("html,body").animate({scrollTop:$(".service").offset().top});
+    });
+    
+    $('.nav-works').click(function() {
+      $("html,body").animate({scrollTop:$(".works").offset().top});
+    });
+    
+    $('.nav-about').click(function() {
+      $("html,body").animate({scrollTop:$(".about").offset().top});
+    });
+    
+    $('.nav-contact').click(function() {
+      $("html,body").animate({scrollTop:$(".contact").offset().top});
+    });
 
+    // click-list特定の位置までスクロール
+    $('.click-service').click(function() {
+      $("html,body").animate({scrollTop:$(".service").offset().top});
+      $('.nav_toggle, .click-nav').removeClass("show");
+      $('body').removeClass('fixed');
+    });
+    
+    $('.click-works').click(function() {
+      $("html,body").animate({scrollTop:$(".works").offset().top});
+      $('.nav_toggle, .click-nav').removeClass("show");
+      $('body').removeClass('fixed');
+    });
+    
+    $('.click-about').click(function() {
+      $("html,body").animate({scrollTop:$(".about").offset().top});
+      $('.nav_toggle, .click-nav').removeClass("show");
+      $('body').removeClass('fixed');
+    });
+    
+    $('.click-contact').click(function() {
+      $("html,body").animate({scrollTop:$(".contact").offset().top});
+      $('.nav_toggle, .click-nav').removeClass("show");
+      $('body').removeClass('fixed');
+    });
+    
     
 });
