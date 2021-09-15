@@ -44,6 +44,7 @@
 }
 // ナビゲーション
 .header-nav {
+  font-family: "Cinzel", "PT Serif", serif, "Dancing Script";
 }
 .nav-list {
   position: fixed;
@@ -100,6 +101,7 @@
   align-items: center;
   background-color: cl(white);
   transition: opacity 0.5s, visibility 0.5s;
+  font-family: "Cinzel", "PT Serif", serif, "Dancing Script";
 }
 
 .click-list {

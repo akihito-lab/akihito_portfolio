@@ -25,6 +25,7 @@ img {
 .cmn-title {
   font-size: 6vw;
   text-align: center;
+  font-family: "Cinzel", "PT Serif", serif, "Dancing Script";
 }
 
 .cmn-title::before {
@@ -106,6 +107,10 @@ img {
 
 .nav_toggle.show i:nth-child(2) {
   opacity: 0;
+}
+
+.header-nav {
+  font-family: "Cinzel", "PT Serif", serif, "Dancing Script";
 }
 
 .nav-list {
@@ -191,6 +196,7 @@ img {
           align-items: center;
   background-color: #fff;
   transition: opacity 0.5s, visibility 0.5s;
+  font-family: "Cinzel", "PT Serif", serif, "Dancing Script";
 }
 
 .click-list:hover .item:not(:hover) {
@@ -236,6 +242,7 @@ body.fixed {
   background-size: cover;
   height: 100vh;
   position: relative;
+  font-family: "Dancing Script", "Cinzel", "PT Serif", serif;
 }
 
 .top-title {
@@ -470,6 +477,7 @@ body.fixed {
 
 .about-text .introduction-text .introduction-title {
   font-size: 3vw;
+  font-family: "Cinzel", "PT Serif", serif, "Dancing Script";
 }
 
 .about-text .introduction-text .introduction-desc {
@@ -483,6 +491,7 @@ body.fixed {
 
 .about-text .education-text .education-title {
   font-size: 3vw;
+  font-family: "Cinzel", "PT Serif", serif, "Dancing Script";
 }
 
 .about-text .education-text .education-desc {
