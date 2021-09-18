@@ -1,7 +1,7 @@
 .works {
   margin-top: 32vw;
   @include sp {
-    margin-top: 232vw;
+    margin-top: 237vw;
   }
 }
 .works-title {
@@ -14,6 +14,8 @@
     margin-top: 6vw;
     @include sp {
       display: block;
+      width: 65%;
+      margin: 6vw auto 0;
     }
     &:first-of-type {
       margin-top: 0;
@@ -63,6 +65,7 @@
   }
   .title {
     font-size: 3vw;
+    font-weight: bold;
     color: cl(black);
     position: relative;
     @include sp {
@@ -87,8 +90,14 @@
   .desc {
     font-size: 2vw;
     margin-top: 3vw;
+    .sp {
+      display: none;
+    }
     @include sp {
       font-size: 4vw;
+      .sp {
+        display: block;
+      }
     }
   }
 }
