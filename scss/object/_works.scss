@@ -1,14 +1,24 @@
 .works {
   margin-top: 32vw;
+  @include sp {
+    margin-top: 240vw;
+  }
 }
 .works-title {
 }
 .works-list {
   margin: 50px auto 0;
   width: 80%;
+  @include sp {
+    margin-top: 40px;
+  }
   .item {
     display: flex;
     margin-top: 20px;
+    @include sp {
+      display: block;
+      margin-top: 40px;
+    }
     &:first-of-type {
       margin-top: 0;
     }
@@ -16,11 +26,17 @@
       flex-direction: row-reverse;
       .text {
         margin-right: 10px;
+        @include sp {
+          margin-right: 0;
+        }
       }
     }
     &:nth-child(odd) {
       .text {
         margin-left: 10px;
+        @include sp {
+          margin-left: 0;
+        }
       }
     }
   }
@@ -28,6 +44,10 @@
     width: 50%;
     perspective: 2000px;
     background-color: cl(black);
+    margin: 0 auto;
+    @include sp {
+      width: 100%;
+    }
   }
   .img {
     transform-origin: right center;
@@ -49,6 +69,9 @@
     font-size: 3vw;
     color: cl(black);
     position: relative;
+    @include sp {
+      font-size: 5vw;
+    }
     &::after {
       content: attr(data-txt);
       position: absolute;
@@ -68,5 +91,9 @@
   .desc {
     font-size: 2vw;
     margin-top: 30px;
+    @include sp {
+      font-size: 4vw;
+      margin-top: 16px;
+    }
   }
 }
