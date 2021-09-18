@@ -19,13 +19,7 @@ img {
 }
 
 .cmn-section {
-  padding-top: 80px;
-}
-
-@media print, screen and (max-width: 768px) {
-  .cmn-section {
-    padding-top: 50px;
-  }
+  padding-top: 10vw;
 }
 
 .cmn-title {
@@ -356,7 +350,7 @@ body.fixed {
 @media print, screen and (max-width: 768px) {
   .service-list .item {
     width: 50%;
-    margin: 8vw auto 0;
+    margin: 6vw auto 0;
   }
   .service-list .item:first-of-type {
     margin-top: 0;
@@ -407,32 +401,25 @@ body.fixed {
 
 @media print, screen and (max-width: 768px) {
   .works {
-    margin-top: 240vw;
+    margin-top: 232vw;
   }
 }
 
 .works-list {
-  margin: 50px auto 0;
+  margin: 6vw auto 0;
   width: 80%;
-}
-
-@media print, screen and (max-width: 768px) {
-  .works-list {
-    margin-top: 40px;
-  }
 }
 
 .works-list .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 20px;
+  margin-top: 6vw;
 }
 
 @media print, screen and (max-width: 768px) {
   .works-list .item {
     display: block;
-    margin-top: 40px;
   }
 }
 
@@ -506,7 +493,7 @@ body.fixed {
       -ms-flex: 1;
           flex: 1;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 3vw;
 }
 
 .works-list .title {
@@ -545,13 +532,12 @@ body.fixed {
 
 .works-list .desc {
   font-size: 2vw;
-  margin-top: 30px;
+  margin-top: 3vw;
 }
 
 @media print, screen and (max-width: 768px) {
   .works-list .desc {
     font-size: 4vw;
-    margin-top: 16px;
   }
 }
 
