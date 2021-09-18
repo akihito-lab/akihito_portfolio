@@ -42,12 +42,26 @@
   margin: auto;
   z-index: 20;
   width: 80%;
+  @include sp {
+    display: block;
+    top: 33vw;
+  }
   .item {
     width: 30%;
     text-align: center;
     margin-right: 10px;
     &:last-of-type {
       margin-right: 0;
+      @include sp {
+        margin-right: auto;
+      }
+    }
+    @include sp {
+      width: 40%;
+      margin: 30px auto 0;
+      &:first-of-type {
+        margin-top: 0;
+      }
     }
   }
   .img-wrapper {
@@ -69,5 +83,8 @@
   .desc {
     font-size: 2vw;
     margin-top: 30px;
+    @include sp {
+      margin-top: 20px;
+    }
   }
 }
