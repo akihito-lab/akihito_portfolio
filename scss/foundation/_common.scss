@@ -1,11 +1,13 @@
 .cmn-section {
   padding-top: 80px;
+  @include sp {
+    padding-top: 50px;
+  }
 }
 .cmn-title {
   font-size: 6vw;
   text-align: center;
   font-family: "Cinzel", "PT Serif", serif, "Dancing Script";
-
   &::before {
     content: "";
     display: inline-block;
@@ -23,5 +25,8 @@
     vertical-align: middle;
     background-color: cl(black);
     margin-left: 10px;
+  }
+  @include sp {
+    font-size: 8vw;
   }
 }
