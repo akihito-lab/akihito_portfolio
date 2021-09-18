@@ -349,7 +349,7 @@ body.fixed {
 
 @media print, screen and (max-width: 768px) {
   .service-list .item {
-    width: 50%;
+    width: 65%;
     margin: 6vw auto 0;
   }
   .service-list .item:first-of-type {
@@ -401,7 +401,7 @@ body.fixed {
 
 @media print, screen and (max-width: 768px) {
   .works {
-    margin-top: 232vw;
+    margin-top: 237vw;
   }
 }
 
@@ -420,6 +420,8 @@ body.fixed {
 @media print, screen and (max-width: 768px) {
   .works-list .item {
     display: block;
+    width: 65%;
+    margin: 6vw auto 0;
   }
 }
 
@@ -498,6 +500,7 @@ body.fixed {
 
 .works-list .title {
   font-size: 3vw;
+  font-weight: bold;
   color: #000;
   position: relative;
 }
@@ -535,9 +538,16 @@ body.fixed {
   margin-top: 3vw;
 }
 
+.works-list .desc .sp {
+  display: none;
+}
+
 @media print, screen and (max-width: 768px) {
   .works-list .desc {
     font-size: 4vw;
+  }
+  .works-list .desc .sp {
+    display: block;
   }
 }
 
