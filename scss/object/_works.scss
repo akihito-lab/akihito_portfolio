@@ -1,23 +1,19 @@
 .works {
   margin-top: 32vw;
   @include sp {
-    margin-top: 240vw;
+    margin-top: 232vw;
   }
 }
 .works-title {
 }
 .works-list {
-  margin: 50px auto 0;
+  margin: 6vw auto 0;
   width: 80%;
-  @include sp {
-    margin-top: 40px;
-  }
   .item {
     display: flex;
-    margin-top: 20px;
+    margin-top: 6vw;
     @include sp {
       display: block;
-      margin-top: 40px;
     }
     &:first-of-type {
       margin-top: 0;
@@ -63,7 +59,7 @@
   .text {
     flex: 1;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 3vw;
   }
   .title {
     font-size: 3vw;
@@ -90,10 +86,9 @@
   }
   .desc {
     font-size: 2vw;
-    margin-top: 30px;
+    margin-top: 3vw;
     @include sp {
       font-size: 4vw;
-      margin-top: 16px;
     }
   }
 }
