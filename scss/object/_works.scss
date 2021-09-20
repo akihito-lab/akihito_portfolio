@@ -1,21 +1,24 @@
 .works {
-  margin-top: 32vw;
+  margin-top: 400px;
   @include sp {
-    margin-top: 237vw;
+    margin-top: 1320px;
   }
 }
 .works-title {
 }
 .works-list {
-  margin: 6vw auto 0;
-  width: 80%;
+  margin: 50px auto 0;
+  max-width: 1100px;
+  padding: 0 20px;
+  @include sp {
+    max-width: 300px;
+  }
   .item {
     display: flex;
-    margin-top: 6vw;
+    margin-top: 30px;
     @include sp {
       display: block;
-      width: 65%;
-      margin: 6vw auto 0;
+      margin-top: 40px;
     }
     &:first-of-type {
       margin-top: 0;
@@ -50,7 +53,7 @@
   .img {
     transform-origin: right center;
     transform: rotateY(0deg);
-    transition: transform 0.3s ease;
+    transition: transform 0.8s ease;
     &:hover {
       transform-origin: right center;
       transform: rotateY(-18deg);
@@ -61,15 +64,18 @@
   .text {
     flex: 1;
     text-align: center;
-    padding-top: 3vw;
+    padding-top: 30px;
+    @include sp {
+      padding-top: 10px;
+    }
   }
   .title {
-    font-size: 3vw;
+    font-size: 3rem;
     font-weight: bold;
     color: cl(black);
     position: relative;
     @include sp {
-      font-size: 5vw;
+      font-size: 3rem;
     }
     &::after {
       content: attr(data-txt);
@@ -88,14 +94,15 @@
     }
   }
   .desc {
-    font-size: 2vw;
-    margin-top: 3vw;
+    font-size: 1.6rem;
+    margin-top: 30px;
+    @include sp {
+      font-size: 1.6rem;
+      margin-top: 20px;
+    }
     .sp {
       display: none;
-    }
-    @include sp {
-      font-size: 4vw;
-      .sp {
+      @include sp {
         display: block;
       }
     }
