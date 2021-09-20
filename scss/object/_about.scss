@@ -6,46 +6,58 @@
 }
 .about-wrapper {
   display: flex;
-  width: 80%;
+  justify-content: center;
+  max-width: 1000px;
   margin: 50px auto 0;
+  padding: 0 20px;
+  @include sp {
+    display: block;
+    max-width: 300px;
+  }
 }
 .about-img-wrapper {
-  width: 30%;
+  max-width: 208px;
+  @include sp {
+    max-width: 208px;
+    margin: 0 auto;
+  }
 }
 .about-img {
   border-radius: 30px;
 }
 .about-text {
   flex: 1;
-  margin-left: 10px;
+  margin-left: 100px;
   text-align: center;
-
+  @include sp {
+    margin-left: 0;
+  }
   .introduction-text {
-    padding-top: 10px;
+    padding-top: 30px;
     .introduction-title {
-      font-size: 3vw;
+      font-size: 3rem;
       font-family: "Cinzel", "PT Serif", serif, "Dancing Script";
     }
     .introduction-desc {
       margin-top: 30px;
-      font-size: 2vw;
+      font-size: 1.6rem;
+      line-height: 2;
     }
   }
   .education-text {
-    padding-top: 10px;
+    padding-top: 30px;
     .education-title {
-      font-size: 3vw;
+      font-size: 3rem;
       font-family: "Cinzel", "PT Serif", serif, "Dancing Script";
     }
     .education-desc {
       margin-top: 30px;
-
-      font-size: 2vw;
+      font-size: 1.6rem;
     }
   }
 }
 .about-catchcopy {
-  font-size: 4vw;
+  font-size: 3rem;
   text-align: center;
   margin-top: 50px;
 }
