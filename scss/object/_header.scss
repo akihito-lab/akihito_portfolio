@@ -82,11 +82,10 @@
       display: block;
       padding: 0px 16px;
       color: cl(black);
-      font-size: 2vw;
+      font-size: 2rem;
       height: 100%;
       display: flex;
       align-items: center;
-      justify-content: center;
     }
   }
 }
@@ -97,15 +96,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s, visibility 0.5s;
+  transform: translateX(100vw);
+  transition: transform 0.5s;
   z-index: 99;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: cl(white);
-  transition: opacity 0.5s, visibility 0.5s;
   font-family: "Cinzel", "PT Serif", serif, "Dancing Script";
 }
 
@@ -127,13 +124,12 @@
     }
     .link {
       color: cl(black);
-      font-size: 4vw;
+      font-size: 2rem;
     }
   }
 }
 .click-nav.show {
-  opacity: 1;
-  visibility: visible;
+  transform: translateX(0px);
 }
 body.fixed {
   overflow: hidden;
