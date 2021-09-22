@@ -246,7 +246,7 @@ body.fixed {
 }
 
 .top {
-  background-image: url(https://placehold.jp/1280x850.png);
+  background-image: url(../../image/water-1018808_1280.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -276,7 +276,7 @@ body.fixed {
 }
 
 .service-list-wrapper {
-  background-image: url("https://placehold.jp/1280x850.png");
+  background-image: url(../../image/laptop-5673901_1280.jpg);
   background-size: cover;
   background-position: center;
   border-top-left-radius: 7000px 1000px;
@@ -318,6 +318,15 @@ body.fixed {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
+  color: #fff;
+}
+
+.service-title::before {
+  background-color: #fff;
+}
+
+.service-title::after {
+  background-color: #fff;
 }
 
 .service-list {

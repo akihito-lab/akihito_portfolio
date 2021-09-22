@@ -5,7 +5,7 @@
 }
 
 .service-list-wrapper {
-  background-image: url("https://placehold.jp/1280x850.png");
+  background-image: url(../../image/laptop-5673901_1280.jpg);
   background-size: cover;
   background-position: center;
   border-top-left-radius: 7000px 1000px;
@@ -38,6 +38,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  color: cl(white);
+  &::before {
+    background-color: cl(white);
+  }
+  &::after {
+    background-color: cl(white);
+  }
 }
 .service-list {
   display: flex;
