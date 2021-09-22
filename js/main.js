@@ -27,7 +27,7 @@ $(function() {
         var changeOffset = $(this).offset().top;
         var scrolltop = $(window).scrollTop();
         var wh = $(window).height();
-        if(scrolltop > changeOffset -  3* wh / 5  ){
+        if(scrolltop > changeOffset -  3* wh / 7    ){
         $(this).addClass('change');
         }
       });
