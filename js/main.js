@@ -75,5 +75,19 @@ $(function() {
       $('body').removeClass('fixed');
     });
     
+    // キャッチコピーのアニメーション
+    $(window).on('scroll', function (){
+      $('.about-catchcopy').each(function () {
+        var changeOffset = $(this).offset().top;
+        var scrolltop = $(window).scrollTop();
+        var $target = $(".about-catchcopy");
+        var CLASSNAME = "-visible";
+        var wh = $(window).height();
+        if(scrolltop > changeOffset -  2* wh / 3){
+          $target.addClass(CLASSNAME);
+        }
+      });
+    });
+
     
 });
